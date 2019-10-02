@@ -104,7 +104,7 @@ function createObjects() {
 	quat.set( 0, 0, 0, 1 );
 	var ground = createParalellepipedWithPhysics( 40, 1, 40, 0, pos, quat, new THREE.MeshPhongMaterial( { color: 0xFFFFFF } ) );
 	ground.receiveShadow = true;
-	textureLoader.load( "../texture/uxiketeru.png", function ( texture ) {
+	textureLoader.load( "./texture/uxiketeru.png", function ( texture ) {
 		texture.wrapS = THREE.RepeatWrapping;
 		texture.wrapT = THREE.RepeatWrapping;
 		texture.repeat.set( 2, 2 );
@@ -123,7 +123,7 @@ function createHuman() {
     var loader = new OBJLoader( new THREE.LoadingManager( () => {
         // onLoad
     } ) );
-	loader.load( '../models/male02/male02.obj', ( obj ) => {
+	loader.load( './models/male02/male02.obj', ( obj ) => {
         obj.applyMatrix((new THREE.Matrix4()).makeScale(0.02, 0.02, 0.02));
         obj.position.y = -95;
         obj.castShadow = true;
