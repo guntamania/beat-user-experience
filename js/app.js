@@ -1,6 +1,6 @@
-import * as THREE from '../build/three.module.js';
-import { OBJLoader } from '../jsm/loaders/OBJLoader.js';
-import { GeometryUtils } from '../jsm/utils/GeometryUtils.js';
+import * as THREE from './build/three.module.js';
+import { OBJLoader } from './jsm/loaders/OBJLoader.js';
+import { GeometryUtils } from './jsm/utils/GeometryUtils.js';
 var container;
 var camera, scene, renderer;
 var mouseX = 0, mouseY = 0;
